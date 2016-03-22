@@ -15,7 +15,7 @@ namespace ShoeBox.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Your  description page.";
 
             return View();
         }
@@ -23,6 +23,12 @@ namespace ShoeBox.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        public ActionResult Prices()
+        {
+            ViewBag.Message = "Prices for the boxes";
 
             return View();
         }
