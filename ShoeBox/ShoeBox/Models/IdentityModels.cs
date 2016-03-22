@@ -24,7 +24,7 @@ namespace ShoeBox.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-
+        public DbSet<Customer> Customers { get; set; }
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
