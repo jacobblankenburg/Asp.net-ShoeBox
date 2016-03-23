@@ -14,10 +14,8 @@ namespace ShoeBox.Models
         public string StreetAddress { get; set; }
         public string City { get; set; }
         public int Zip { get; set; }
-        public decimal ShoeSize { get; set; }
-        public string ShoePreference { get; set; }
-        
-
-
+        public int BoxPreference { get; set; }
+        public int SubscriptionType { get; set; }
+        public decimal BillingAmount { get; set; }
     }
 }

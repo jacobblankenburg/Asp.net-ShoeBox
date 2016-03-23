@@ -213,16 +213,15 @@
     <Compile Include="Migrations\201603221911353_migration3.Designer.cs">
       <DependentUpon>201603221911353_migration3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201603231539389_migrationNew.cs" />
+    <Compile Include="Migrations\201603231539389_migrationNew.Designer.cs">
+      <DependentUpon>201603231539389_migrationNew.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-<<<<<<< HEAD
-    <Compile Include="Models\Survey.cs" />
-=======
-    <Compile Include="Models\SurveyResults.cs" />
->>>>>>> 11dae134ae919de1bfa064741b8f65c36f52b958
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -304,6 +303,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201603221911353_migration3.resx">
       <DependentUpon>201603221911353_migration3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603231539389_migrationNew.resx">
+      <DependentUpon>201603231539389_migrationNew.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
