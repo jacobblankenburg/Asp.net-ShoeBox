@@ -213,16 +213,25 @@
     <Compile Include="Migrations\201603221911353_migration3.Designer.cs">
       <DependentUpon>201603221911353_migration3.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Migrations\201603231406565_MigrationTest.cs" />
     <Compile Include="Migrations\201603231406565_MigrationTest.Designer.cs">
       <DependentUpon>201603231406565_MigrationTest.cs</DependentUpon>
+=======
+    <Compile Include="Migrations\201603231539389_migrationNew.cs" />
+    <Compile Include="Migrations\201603231539389_migrationNew.Designer.cs">
+      <DependentUpon>201603231539389_migrationNew.cs</DependentUpon>
+>>>>>>> 626f13303a02b693f4d7cd3b66886924a2a2f3eb
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+<<<<<<< HEAD
     <Compile Include="Models\Survey.cs" />
+=======
+>>>>>>> 626f13303a02b693f4d7cd3b66886924a2a2f3eb
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -305,8 +314,13 @@
     <EmbeddedResource Include="Migrations\201603221911353_migration3.resx">
       <DependentUpon>201603221911353_migration3.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Migrations\201603231406565_MigrationTest.resx">
       <DependentUpon>201603231406565_MigrationTest.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Migrations\201603231539389_migrationNew.resx">
+      <DependentUpon>201603231539389_migrationNew.cs</DependentUpon>
+>>>>>>> 626f13303a02b693f4d7cd3b66886924a2a2f3eb
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
