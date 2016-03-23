@@ -16,6 +16,9 @@ namespace ShoeBox.Models
             // Add custom user claims here
             return userIdentity;
         }
+        public int Age { get; set; }
+        public string City { get; set; }
+        public string Country { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>

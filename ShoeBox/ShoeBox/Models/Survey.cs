@@ -7,12 +7,10 @@ namespace ShoeBox.Models
 {
     public class Survey
     {
-        public int ID { get; set; }
-
-        public string question1Score { get; set; }
-        public string question2Score { get; set; }
-        public string question3Score { get; set; }
-        public int questionScore { get; set; }
-        public int totalScore { get; set; }
+        public string Question1 { get; set; }
+        public string Question2 { get; set; }
+        public string Question3 { get; set; }
+        public string Question4 { get; set; }
+        public string Question5 { get; set; }
     }
 }
