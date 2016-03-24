@@ -7,13 +7,13 @@ namespace ShoeBox.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class migrationNew : IMigrationMetadata
+    public sealed partial class Surveys : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(migrationNew));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Surveys));
         
         string IMigrationMetadata.Id
         {
-            get { return "201603231539389_migrationNew"; }
+            get { return "201603241420421_Surveys"; }
         }
         
         string IMigrationMetadata.Source

@@ -3,10 +3,26 @@ namespace ShoeBox.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class migration1 : DbMigration
+    public partial class InitialMigration : DbMigration
     {
         public override void Up()
         {
+            CreateTable(
+                "dbo.Customers",
+                c => new
+                    {
+                        ID = c.Int(nullable: false, identity: true),
+                        FirstName = c.String(),
+                        LastName = c.String(),
+                        StreetAddress = c.String(),
+                        City = c.String(),
+                        Zip = c.Int(nullable: false),
+                        BoxPreference = c.Int(nullable: false),
+                        SubscriptionType = c.Int(nullable: false),
+                        BillingAmount = c.Decimal(nullable: false, precision: 18, scale: 2),
+                    })
+                .PrimaryKey(t => t.ID);
+            
             CreateTable(
                 "dbo.AspNetRoles",
                 c => new
@@ -35,6 +51,10 @@ namespace ShoeBox.Migrations
                 c => new
                     {
                         Id = c.String(nullable: false, maxLength: 128),
+                        Address = c.String(),
+                        City = c.String(),
+                        Country = c.String(),
+                        ZipCode = c.Int(nullable: false),
                         Email = c.String(maxLength: 256),
                         EmailConfirmed = c.Boolean(nullable: false),
                         PasswordHash = c.String(),
@@ -94,6 +114,7 @@ namespace ShoeBox.Migrations
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
+            DropTable("dbo.Customers");
         }
     }
 }

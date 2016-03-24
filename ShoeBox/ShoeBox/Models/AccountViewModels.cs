@@ -79,10 +79,10 @@ namespace ShoeBox.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
-        public int Age { get; set; }
-        public string City { get; set; }
-
+        public string Address { get; set; }
+        public string City1 { get; set; }
         public string Country { get; set; }
+        public int ZipCode { get; set; }
     }
 
     public class ResetPasswordViewModel

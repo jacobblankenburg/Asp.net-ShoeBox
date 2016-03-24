@@ -22,21 +22,21 @@
                 @Html.ActionLink("Create", "SetPassword")
             }
             ]
-        </dd>
+        @*</dd>
         <dt>External Logins:</dt>
         <dd>
             @Model.Logins.Count [
             @Html.ActionLink("Manage", "ManageLogins") ]
-        </dd>
+        </dd>*@
         @*
             Phone Numbers can used as a second factor of verification in a two-factor authentication system.
-             
+
              See <a href="http://go.microsoft.com/fwlink/?LinkId=403804">this article</a>
                 for details on setting up this ASP.NET application to support two-factor authentication using SMS.
-             
+
              Uncomment the following block after you have set up two-factor authentication
         *@
-        @*  
+        @*
             <dt>Phone Number:</dt>
             <dd>
                 @(Model.PhoneNumber ?? "None") [
@@ -53,12 +53,12 @@
                 ]
             </dd>
         *@
-        <dt>Two-Factor Authentication:</dt>
+        @*<dt>Two-Factor Authentication:</dt>*@
         <dd>
-            <p>
+            @*<p>
                 There are no two-factor authentication providers configured. See <a href="http://go.microsoft.com/fwlink/?LinkId=403804">this article</a>
                 for details on setting up this ASP.NET application to support two-factor authentication.
-            </p>
+            </p>*@
             @*@if (Model.TwoFactor)
                 {
                     using (Html.BeginForm("DisableTwoFactorAuthentication", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
@@ -79,6 +79,25 @@
                         </text>
                     }
                 }*@
+            <div class="col-md-4" align="center">
+                <h4>Survey</h4>
+                <p>Take survey</p>
+                <p>
+                    <a class="btn btn-default" href="~/Views/Survey/Create.cshtml">Take Survey &raquo;</a>
+                </p>
+            </div>
+            <div class="col-md-4" align="center">
+                <h4>View Your Box</h4>
+                <p>Your Box</p>
+                <p>
+                    <a class="btn btn-default" href="">View Box &raquo;</a>
+                </p>
+            </div>
+            <div class="col-md-4" align="center">
+                <h4>Amount Owed</h4>
+                <p>Your Balance due</p>
+                <p><a class="btn btn-default" href="">Amount Owed &raquo;</a></p>
+            </div>
         </dd>
     </dl>
 </div>
